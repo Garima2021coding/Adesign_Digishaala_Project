@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Leftpane from './Components/Leftpane'
+import Grid from '@mui/material/Grid';
 
-function App() {
+
+export default function FixedContainer() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container fixed>
+        <Box sx={{ bgcolor: '#3f50b5', height: '10vh' }} />
+        <Box>
+          <Grid>
+            <Grid container spacing={1}>
+              <Grid item xs={3}>
+              <Leftpane>
+                
+                </Leftpane>              
+              </Grid>
+              <Grid item xs={4}>
+                
+              </Grid>
+              <Grid item xs={5}>
+                
+              </Grid>
+              
+                
+              
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+    </React.Fragment>
   );
 }
-
-export default App;
