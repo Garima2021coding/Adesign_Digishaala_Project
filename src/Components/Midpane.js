@@ -1,6 +1,5 @@
 import React from 'react';
 import {Typography,Card,Box,Stack,Button} from '@mui/material';
-
 function Midpane() {
     return (
         <Card sx = {{height:'480px', width:'400px', marginTop:'20px', borderRadius:'15px', border:'2px solid rgba(0, 0, 0, 0.2)'}} variant="outlined">
