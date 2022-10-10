@@ -9,6 +9,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 
 
 
@@ -17,8 +18,8 @@ import Box from '@mui/material/Box';
 function Leftpane() {
 
     return (
-        <Box>
-            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', }}>
+        <Box sx={{backgroundColor:'#F7F8F9', height:'100vh'}}>
+            <List sx={{ width: '100%', maxWidth: 360, bgcolor: '#F7F8F9',color: '#1E232C' }}>
                 <ListItem>
                     <ListItemAvatar>
                         <Avatar>
@@ -27,16 +28,15 @@ function Leftpane() {
                     </ListItemAvatar>
                     <ListItemText primary="Dashboard" />
                 </ListItem>
-                <Divider variant="inset" component="li" />
+                
                 <ListItem>
-                    <ListItemAvatar>
-                        <Avatar>
-                            <WorkIcon />
-                        </Avatar>
+                    <ListItemAvatar sx={{marginTop:'5px'}}>
+                        <AccountCircleOutlinedIcon />
+                        
                     </ListItemAvatar>
                     <ListItemText primary="Profile" />
                 </ListItem>
-                <Divider variant="inset" component="li" />
+                
                 <ListItem>
                     <ListItemAvatar>
                         <Avatar>
@@ -45,7 +45,7 @@ function Leftpane() {
                     </ListItemAvatar>
                     <ListItemText primary="Subscriptions" />
                 </ListItem>
-                <Divider variant="inset" component="li" />
+                
                 <ListItem>
                     <ListItemAvatar>
                         <Avatar>
